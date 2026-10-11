@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>de.savetv-dl</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>/PFAD/ZU/save.tv-for-mac/savetv_dl.py</string>
+    </array>
+
+    <!-- alle 2 Stunden prüfen -->
+    <key>StartInterval</key>
+    <integer>7200</integer>
+
+    <!-- zusätzlich einmal direkt nach dem Login -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/savetv-dl.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/savetv-dl.err.log</string>
+
+    <key>Nice</key>
+    <integer>10</integer>
+</dict>
+</plist>

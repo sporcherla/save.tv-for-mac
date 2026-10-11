@@ -1,0 +1,11 @@
+# Build
+app/Save.TV Downloader.app/
+app/*.icns
+# macOS
+.DS_Store
+# lokale Daten (liegen ohnehin unter ~/.savetv-dl, zur Sicherheit)
+config.json
+done.json
+cookies.txt
+*.log
+*.part
